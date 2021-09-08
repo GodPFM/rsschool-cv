@@ -48,3 +48,14 @@ function revrot(str, sz) {
   return result;
 }
 ```
+## Education
+
+1. Ural Federal University, Automation of Technological and Production Processes.
+2. Courses: 
+    1. HTML academy (basic HTML, css, js)
+    2. RS-School(soon)
+
+## Languages: 
+
+* Russian
+* English - A2
