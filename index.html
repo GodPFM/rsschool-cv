@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Asmeev CV RS-School</title>
   </head>
@@ -53,23 +58,28 @@
           <h2 class="contacts__title">My contacts</h2>
           <ul class="contacts__list">
             <li class="phone-number contacts__item">
-              <img src="img/phone-call.svg" class="svg-icon" />8-999-999-99-99
+              <img
+                src="img/phone-call.svg"
+                alt=""
+                class="svg-icon"
+              />8-999-999-99-99
             </li>
             <li class="telegram contacts__item">
               <a href="https://t.me/godpfm">
-                <img src="img/telegram.svg" class="svg-icon" />@GodPFM</a
+                <img src="img/telegram.svg" alt="" class="svg-icon" />@GodPFM</a
               >
             </li>
             <li class="e-mail contacts__item">
-              <a href="mailto:asmeev.daniil@yandex.ru?subject=From CV"
-                ><img src="img/email.svg" class="svg-icon" />Send email</a
-              >
+              <a href="mailto:asmeev.daniil@yandex.ru?subject=From_CV">
+                <img src="img/email.svg" alt="" class="svg-icon" />
+                Send email
+              </a>
             </li>
             <li class="e-mail contacts__item">
               <a
                 href="https://github.com/GodPFM?tab=repositories"
                 target="_blank"
-                ><img src="img/github.svg" class="svg-icon" />GitHub</a
+                ><img src="img/github.svg" alt="" class="svg-icon" />GitHub</a
               >
             </li>
           </ul>
@@ -127,7 +137,58 @@
         </div>
       </section>
 
-      <section></section>
+      <section class="code-example">
+        <div class="wrapper">
+          <h2 class="code-example__title">My code example</h2>
+          <p class="code-example__description">
+            Here is a solution for a task from
+            <a href="https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991"
+              >Codewars.com</a
+            >:
+          </p>
+          <pre><code>function revrot(str, sz) {
+            let massive = [];
+            let start = 0;
+            let end = sz;
+            let strToAdd = '';
+            let result = '';
+            let number = 0;
+            if (sz <= 0 || str == "" || str.length < sz) {
+              return '';
+            } 
+            for (let i = 0; i < str.length; i += sz) {
+              strToAdd = str.slice(start, end);
+              if (strToAdd.length < sz ) {
+                break;
+              }
+              massive.push(str.slice(start, end));
+              start += sz;
+              end += sz;
+            }
+            for (let i = 0; i < massive.length; i++) {
+              for (let j = 0; j < massive[i].length; j++) {
+                number = number + Math.pow(massive[i][j], 3);
+                console.log(number);
+              }
+              if (number % 2 === 0) {
+                massive[i] = massive[i].split('').reverse().join('');
+              } else {
+                massive[i] = massive[i].split('');
+                massive[i].push(massive[i][0]);
+                massive[i].shift();
+                massive [i] = massive[i].join('');
+              }
+              number = 0;
+              result = result + massive[i];
+            }
+          return result;
+        }</code></pre>
+        </div>
+      </section>
     </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

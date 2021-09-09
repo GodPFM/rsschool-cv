@@ -326,5 +326,41 @@ img {
     font-size: 20px;
     line-height: 28px;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
+
+.code-example {
+    margin-top: 60px;
+    &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243d;
+    margin-top: 7px;
+    margin-bottom: 2px;
+    text-align: center;
+    
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 45%;
+      height: 2px;
+      background-color: #aee3f3;
+      position: relative;
+    }
+
+    &::before {
+      margin-left: -100%;
+      left: -14px;
+    }
+
+    &::after {
+      margin-right: -100%;
+      right: -14px;
+    }
+    }
+}
+
