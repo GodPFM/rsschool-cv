@@ -4,30 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Asmeev CV RS-School</title>
   </head>
   <body>
-    <header class="footer">
-      <h1 class="footer__full-name">Asmeev Daniil</h1>
-      <div class="footer__contacts">
-        <p class="number footer__contact-item">+7-999-999-99-99</p>
-        <p class="telegram footer__contact-item telegram">
-          <a href="https://t.me/godpfm">@godpfm</a>
-        </p>
-        <p class="email footer__contact-item">asmeev.daniil@yandex.ru</p>
-      </div>
-      <div class="footer__thumbnail">
-        <img src="img/avatar.jpg" alt="Аватар" />
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <nav class="header__navigation-list">
+          <ul>
+            <li class="header__navigation-item"><a href="#">Contacts</a></li>
+            <li class="header__navigation-item"><a href="#">About me</a></li>
+            <li class="header__navigation-item"><a href="#">Education</a></li>
+            <li class="header__navigation-item"><a href="#">Languages</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
-    <section class="heading">
-        <div class="heading__proffesion">JS/Frontend-developer</div>
-    </section>
-
     <main>
-        
+      <section class="salutation">
+        <div class="wrapper salutation__wrapper">
+          <div class="salutation__left-side">
+            <h1 class="salutation__title">
+              Hello, I am Daniil,<br /><span class="salutation__proffesion"
+                >Trainee JS/Frontend-developer</span
+              >
+            </h1>
+            <a
+              href="https://1drv.ms/b/s!Ap3-5dfdQVMYkC5cW846xwI5TNLd?e=M4Koyh"
+              target="_blank"
+              class="salutation__download"
+              >Download this CV as pdf</a
+            >
+          </div>
+          <div class="salutation__right-side">
+            <img src="img/avatar.jpg" alt="Avatar" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="wrapper contacts__wrapper">
+          <h2 class="contacts__title">My contacts</h2>
+          <ul class="contacts__list">
+            <li class="phone-number contacts__item">
+              <img src="img/phone-call.svg" class="svg-icon" />8-999-999-99-99
+            </li>
+            <li class="telegram contacts__item">
+              <a href="https://t.me/godpfm">
+                <img src="img/telegram.svg" class="svg-icon" />@GodPFM</a
+              >
+            </li>
+            <li class="e-mail contacts__item">
+              <a href="mailto:asmeev.daniil@yandex.ru?subject=From CV"
+                ><img src="img/email.svg" class="svg-icon" />Send email</a
+              >
+            </li>
+            <li class="e-mail contacts__item">
+              <a
+                href="https://github.com/GodPFM?tab=repositories"
+                target="_blank"
+                ><img src="img/github.svg" class="svg-icon" />GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-me">
+        <div class="wrapper">
+          <h2 class="about-me__title">About me</h2>
+          <p class="about-me__text">
+            I am a beginner front-end developer, the main goal is to learn how
+            to create complex websites and web applications.<br /><br />
+            There was no work experience at the moment. I have the following
+            positive qualities: sociable, diligent, I strive to learn and
+            develop.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="wrapper">
+          <h2 class="skills__title">My skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <figure class="skills__html">
+                <img src="img/html5.svg" alt="" />
+                <figcaption>HTML5</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__css">
+                <img src="img/css3.svg" alt="" />
+                <figcaption>CSS3, SASS</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__js">
+                <img src="img/js.svg" alt="" />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__figma">
+                <img src="img/figma.svg" alt="" />
+                <figcaption>Figma</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__github">
+                <img src="img/github.svg" alt="" />
+                <figcaption>GitHub</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section></section>
     </main>
   </body>
 </html>
