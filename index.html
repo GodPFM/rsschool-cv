@@ -22,14 +22,33 @@
     <header class="header">
       <div class="wrapper header__wrapper">
         <nav class="header__navigation-list">
-          <ul>
-            <li class="header__navigation-item"><a href="#">Contacts</a></li>
-            <li class="header__navigation-item"><a href="#">About me</a></li>
-            <li class="header__navigation-item"><a href="#">My skills</a></li>
-            <li class="header__navigation-item"><a href="#">My code example</a></li>
-            <li class="header__navigation-item"><a href="#">My projects</a></li>
-            <li class="header__navigation-item"><a href="#">Education</a></li>
-            <li class="header__navigation-item"><a href="#">Languages</a></li>
+          <div class="header__trigger" id="trigger">
+            <div class="header__bar1"></div>
+            <div class="header__bar2"></div>
+            <div class="header__bar3"></div>
+          </div>
+          <ul class="header__desktop" id="menu">
+            <li class="header__navigation-item">
+              <a href="#link1">Contacts</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link2">About me</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link3">My skills</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link4">My code example</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link5">My projects</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link6">Education</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#link7">Languages</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -56,7 +75,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="link1">
         <div class="wrapper contacts__wrapper">
           <h2 class="contacts__title">My contacts</h2>
           <ul class="contacts__list">
@@ -89,7 +108,7 @@
         </div>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="link2">
         <div class="wrapper">
           <h2 class="about-me__title">About me</h2>
           <p class="about-me__text">
@@ -102,7 +121,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="link3">
         <div class="wrapper">
           <h2 class="skills__title">My skills</h2>
           <ul class="skills__list">
@@ -140,7 +159,7 @@
         </div>
       </section>
 
-      <section class="code-example">
+      <section class="code-example" id="link4">
         <div class="wrapper">
           <h2 class="code-example__title">My code example</h2>
           <p class="code-example__description">
@@ -189,16 +208,21 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="link5">
         <div class="wrapper">
           <h2 class="projects__title">My projects</h2>
           <div class="projects__list">
             <div class="projects__item">
-              <img
-                src="img/project-img.png"
-                alt=""
-                class="projects__item-img"
-              />
+              <a
+                href="https://godpfm.github.io/test/"
+                class="projects__link"
+                target="_blank"
+              >
+                <img
+                  src="img/project-img.png"
+                  alt=""
+                  class="projects__item-img"
+              /></a>
               <div class="projects__text-info">
                 <h3 class="projects__item-name">Far East supplier</h3>
                 <div class="projects__info">
@@ -216,7 +240,7 @@
         </div>
       </section>
 
-      <section class="education">
+      <section class="education" id="link6">
         <div class="wrapper">
           <h2 class="education__title">Education</h2>
           <div class="education__higher">
@@ -234,7 +258,7 @@
         </div>
       </section>
 
-      <section class="languages">
+      <section class="languages" id="link7">
         <div class="wrapper">
           <h2 class="languages__title">Languages</h2>
           <ul>
@@ -255,6 +279,7 @@
         </div>
       </footer>
     </main>
+    <script src="js/scripts.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

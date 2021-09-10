@@ -382,7 +382,7 @@ img {
   height: auto;
 }
 
-.header__navigation-list ul {
+.header__desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,8 +877,17 @@ img {
      object-fit: cover;
   border-radius: 6px;
   margin-right: 18px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   -webkit-box-shadow: -2px 4px 10px 2px #aee3f3;
           box-shadow: -2px 4px 10px 2px #aee3f3;
+}
+
+.projects__item-img:hover {
+  -webkit-box-shadow: -2px 4px 10px 2px red;
+          box-shadow: -2px 4px 10px 2px red;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .projects__item-name {
@@ -918,6 +927,62 @@ img {
   margin-right: 26px;
 }
 
+@media screen and (max-width: 1040px) {
+  .header__desktop {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .salutation {
+    margin-top: 20px;
+  }
+  .header {
+    position: relative;
+  }
+  .header__desktop {
+    display: none;
+  }
+  .header__bar1, .header__bar2, .header__bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .header__trigger {
+    display: inline-block;
+    cursor: pointer;
+    right: 20px;
+    top: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .header__show {
+    display: block;
+  }
+  .change .header__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .change .header__bar2 {
+    opacity: 0;
+  }
+  .change .header__bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .header__show .header__navigation-item {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .header__show .header__navigation-item a {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 872px) {
   .salutation__left-side {
     margin-left: 20px;
@@ -934,7 +999,7 @@ img {
   .contacts__item {
     width: 45%;
   }
-  .about-me__title, .about-me__text {
+  .about-me__text {
     margin-left: 20px;
     margin-right: 20px;
   }
