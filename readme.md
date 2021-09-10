@@ -1,1 +1,1 @@
-https://godpfm.github.io/rsschool-cv/cv
+https://godpfm.github.io/rsschool-cv/
