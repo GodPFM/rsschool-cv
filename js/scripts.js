@@ -21,3 +21,23 @@ for (let link of links) {
     });
   });
 }
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("btnToTop").classList.add("block");
+  } else {
+    document.getElementById("btnToTop").classList.remove("block");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function toTop() {
+  document.getElementById('header').scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });// For Chrome, Firefox, IE and Opera
+}
