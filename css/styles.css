@@ -785,6 +785,10 @@ img {
   font-style: italic;
 }
 
+.languages {
+  margin-bottom: 20px;
+}
+
 .languages__title {
   font-weight: bold;
   font-size: 22px;
@@ -1107,6 +1111,12 @@ img {
     bottom: 20px;
     width: 60px;
     height: 60px;
+  }
+  .footer__year {
+    margin-left: 20px;
+  }
+  .footer__logo {
+    margin-right: 20px;
   }
 }
 

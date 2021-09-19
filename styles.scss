@@ -449,7 +449,7 @@ img {
 
 .languages {
   // .languages__title
-
+  margin-bottom: 20px;
   &__title {
     font-weight: bold;
     font-size: 22px;
@@ -794,6 +794,16 @@ img {
     width: 60px;
     height: 60px;
 
+  }
+
+  .footer {
+    &__year {
+      margin-left: 20px;
+    }
+
+    &__logo {
+      margin-right: 20px;
+    }
   }
 }
 
