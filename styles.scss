@@ -426,11 +426,19 @@ img {
       right: -14px;
     }
   }
-  // .education__higher
 
   &__higher {
     display: flex;
     justify-content: space-around;
+  }
+
+  &__year {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
   }
 
   strong {
