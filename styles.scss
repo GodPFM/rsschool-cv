@@ -605,11 +605,61 @@ img {
   }
 }
 
+.top-button {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 150px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color:rgb(52, 125, 198);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: red;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.block {
+  display: block;
+  animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .top-button {
+    right: 50px;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .header {
     &__desktop {
       margin-left: 20px;
       margin-right: 20px;
+    }
+  }
+
+  .top-button {
+    right: 50px;
+    &:hover {
+      background-color:rgb(52, 125, 198);
     }
   }
 }
@@ -737,6 +787,14 @@ img {
       margin-right: 20px;
     }
   }
+
+  .top-button {
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -782,6 +840,17 @@ img {
       margin: 0 auto;
       height: auto;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .education {
+    &__year {
+      margin-left: 20px;
+    }
+    &__description {
+      margin-left: 20px;
     }
   }
 }
